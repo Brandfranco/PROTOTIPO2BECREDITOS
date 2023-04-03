@@ -42,6 +42,32 @@ align-items: center;
 color:black;
 
 }
+.tittle{
+  color: blueviolet;
+  text-align: center;
+}
+.titlesub{
+  color: blueviolet;
+  font-size: 15px;
+}
+.cita{
+border-radius:6%;
+ width: 100%;
+}
+.fomulario{
+  padding-bottom: 25px;
+  padding-top: 25px;
+ 
+}
+
+.containero{
+
+  width: 350px;
+  height: 550px;
+  margin: auto;
+  background: linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
+  border-radius: 3%;
+}
 .contenedor-servicios h1{
 text-align: center;
 color:rgb(156, 153, 254);
@@ -200,34 +226,7 @@ width: 300px;
 .servicio-ind p{
   font-weight: 300px;
 }
-.tittle{
-  color: blueviolet;
-  text-align: center;
-}
-.titlesub{
-  color: blueviolet;
-  font-size: 15px;
-}
-.cita{
-border-radius:6%;
- width: 100%;
-}
-.fomulario{
-  padding-bottom: 25px;
-  padding-top: 25px;
- 
-}
 
-
-
-.containero{
-
-  width: 350px;
-  height: 550px;
-  margin: auto;
-  background: linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
-  border-radius: 3%;
-}
 
 
 
