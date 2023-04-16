@@ -15,10 +15,14 @@
 </head>
 
 <body>
-   
+  <div class="container-boton">
+    <a href="https://api.whatsapp.com/send?phone=3143966161" class="btn-wsp " target="_blank">
+      <img class="boton" src="img/whatsapp.png" alt="">
+    </a>
+  </div>
     <header>
         
-        <nav class="menu navbar navbar-expand-lg  ">
+        <nav class="menu navbar navbar-expand-lg  row">
           
             <div class="container-fluid">
                 <img src="img/Logo.png" alt="logo" class="logo" >
@@ -51,13 +55,16 @@
                   </li>
                   
                 </ul>
-                <form class="d-flex" role="search">
-                    <img src="img/iconoingreso.png" alt="logo" class="iconoingreso" >
-                    <input class="form-control me-2" type="email" placeholder="EMAIL" id="email" >
-                    <img src="img/iconoclave.png" alt="logo" class="iconoclave" >
-                <input class="form-control me-2" type="password" placeholder="CONTRASEÑA"  id="clave">
-                  <button class="btn btn-outline-success " type="submit">INGRESAR</button>
+                
+                <form class="d-flex " role="search">
+    
+                    <img src="img/iconoingreso.png" alt="logo" class="iconoingreso me-2 img-fluid" >
+                    <input class="form-control me-2  " type="email" placeholder="EMAIL" id="email" >
+                    <img src="img/iconoclave.png" alt="logo" class="iconoclave me-2" >
+                    <input class="form-control me-2 " type="password" placeholder="CONTRASEÑA"  id="clave">
+                    <button class="btn btn-outline-success me-2 " type="submit">INGRESAR</button>
                 </form>
+              
               </div>
             </div>
           </nav>
@@ -68,8 +75,9 @@
       <section class="servicios col-sm">
         <div class="contenedor-servicios ">
           <h1 > SERVICIOS</h1>
-          <div class=" col-12">
- <img class="imagen-servicios img-fluid"src="img/Imagenservicios1.svg" alt="" class="col-sm">
+        
+          <div class=" imagenservi ">
+            <img class="imagen-servicios "src="img/Imagenservicios1.svg" alt="" >
 </div>
 </div>
 <div class="contenedor-cards-servicios row ">
@@ -188,18 +196,18 @@
   <section class="calidad-servicios ">
     <div class="contenedor row">
         <h2 class="titulo ">CALIDAD EN NUESTRO SERVICIOS</h2>
-        <div class="servicios-cont col-md col-sm">
+        <div class="servicios-cont  col-md col-sm">
             <div class="servicio-ind col-md col-sm">
              <img src="img/FACIL.svg" alt="">
              <h3>FACIL</h3>
              <P>Te asesoramos y te acompañamos en todo el proceso, nuestro proceso lleva consigo una consulta en data crédito digital que facilita la respuesta del pre-aprobado.</P>
             </div>
-            <div class="servicio-ind col-md col-sm">
+            <div class="servicio-ind col-mdcol-sm">
                 <img src="img/RELOJ.svg" alt="">
                 <h3>RAPIDO</h3>
                 <P>Agilidad en desembolso y proceso en línea o con asesoría personalizada.</P>
                </div>
-               <div class="servicio-ind col-md col-sm">
+               <div class="servicio-ind  col-md col-sm">
                 <img src="img/seguro.svg" alt="">
                 <h3>SEGURO</h3>
                 <P>Estamos vigilados por las entidades financieras de las cuales somos socios y prestamos nuestro servicio como outsourcing oficial de BANCO UNION SA.</P>
@@ -209,26 +217,31 @@
 
 </section>
 
-<section class="fomulario">
-  <div class="containero">
+<section class="fomulario row ">
+  <h1>NOS PONEMOS EN CONTACTO CONTIGO</h1>
+  
+  <img src="img/registro.jfif" class="img-formulario col-6" alt="">
+
+  <div class="containero ">
+   
       <form action="php/formulario.php" method="POST" class="row g-3 m-3">
           <h1 class="tittle "> FORMULARIO DE CITAS</h1>
           <div class="col-md-12">
             
-            <input type="text" class="form-control" name="nombre" placeholder="NOMBRE COMPLETO">
+            <input type="text" class="form-control" name="nombre" placeholder="NOMBRE COMPLETO" required>
           </div>
           <div class="col-md-12">
-            <input type="number" class="form-control" name="telefono" placeholder="NUMERO DE CELULAR">
+            <input type="number" class="form-control" name="telefono" placeholder="NUMERO DE CELULAR" required>
           </div>
           <div class="col-md-12">
-            <input type="text" class="form-control" name="email" placeholder="CORREO ELECTRONICO">
+            <input type="text" class="form-control" name="email" placeholder="CORREO ELECTRONICO" required>
           </div>
           <div class="col-md-12">
             <input type="text" class="form-control" name="ubicacion" placeholder="¿EN QUE CIUDAD ESTAS?">
           </div>
           <div class="col-md-12">
           
-            <select name="pagaduria" class="form-select">
+            <select name="pagaduria" class="form-select" required>
               <option selected>ELIGE TU PAGADURIA</option>
               <option>POLICIA NACIONAL</option>
               <option>PENSIONADO</option>
