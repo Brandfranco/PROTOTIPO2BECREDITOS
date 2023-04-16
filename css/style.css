@@ -13,9 +13,31 @@ body{
 .logo{
   max-width: 80px;
 }
-header{
-  background: linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
+.container-boton{
+  background-color: green;
+  border: 2px solid #fff;
+  position:fixed;
+  z-index: 999;
+  border-radius: 100px;
+  bottom: 20px;
+  right: 25px;
+  
+  transition: ease 0.3s;
+  
 }
+.container-boton:hover{
+transform: scale(1.1);
+transition:0.3s ;
+}
+.boton{
+  width: 80px;
+  transition: ease 1s;
+}
+
+header{
+  background: linear-gradient(100deg, rgb(116, 216, 252),rgb(156, 153, 254));
+}
+
 .textos-header{
 text-align: center;
 color: black;
@@ -24,6 +46,7 @@ color: black;
   width: 40px;
   height: 35px;
   padding-right: 4px;
+  display: flex;
 }
 .iconoclave{
   width: 35px;
@@ -31,26 +54,75 @@ color: black;
   padding-right: 6px;
 }
 .form-control {
-width: 150px;
+width: 100px;
 height: 35px;
+
 }
 .btn-outline-success{
-  width: 100px;
+width: 100px;
 height: 35px;
 border-color: black;
 align-items: center;
 color:black;
 
 }
+
+.tittle{
+  color: blueviolet;
+  text-align: center;
+}
+.titlesub{
+  color: blueviolet;
+  font-size: 15px;
+}
+.cita{
+border-radius:6%;
+ width: 100%;
+}
+.fomulario{
+  padding-bottom: 25px;
+  padding-top: 25px;
+ 
+}
+
+.containero{
+
+  width: 350px;
+  height: 550px;
+  margin: auto;
+  background: linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
+  border-radius: 3%;
+}
+.fomulario h1{
+  text-align: center;
+  color:rgb(156, 153, 254);
+}
+.fomulario .tittle{
+  color: white;
+}
 .contenedor-servicios h1{
 text-align: center;
 color:rgb(156, 153, 254);
 }
 .imagen-servicios{
- margin: auto;
-  display: block;
-width: 800px;
-height: 400px;
+ 
+  width: 800px;
+  height: 400px;
+  }
+
+    .servicios .imagenservi {
+      text-align: center;
+    }
+
+.form-control{
+  width: 300px;
+}
+.form-select{
+  width: 300px;
+}
+.cita{
+  width: 300px; 
+  border-radius: 5px;
 }
 
 .card-title{
@@ -67,15 +139,13 @@ justify-content: center;
 .card{
   display:flex;
  padding-right: 10px;
-  width: 250px;
-  height: 400;
+  width: 400px;
+  height: 4;
   background:linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
 
 }
 .card-text{
 text-align: center;
-  
-  
 }
 .botonservicios{
 display: block;
@@ -91,10 +161,8 @@ border-radius: 5px;
   }
   .card-img-top{
     margin-top: 5px;
-    border-radius: 5px;
+    border-radius: 5%;
     display: block;
-    width: auto;
-    height: auto;
   }
 .nuestrosclientes{
   color:rgb(156, 153, 254);
@@ -104,8 +172,9 @@ border-radius: 5px;
 .nuestrosclientes h5{
 padding-top: 5px;
 }
-.nuestrosclientestext{
+.nuestrosclientestext{  
   color:gray;
+  padding-right: 5px;
 }
 .container-clientes{
   align-content: center;
@@ -153,13 +222,16 @@ width: 300px;
 
 
  }
- .quedicen .card img{
+ .quedicen .card-img-top{
 
   border-radius: 100%;
   width: 150px;
   height: 150px;
   object-fit: cover;
   border: 0px solid #fff;
+  display: block;
+  margin: auto;
+  padding: 5px;
  
    }
  
@@ -200,34 +272,7 @@ width: 300px;
 .servicio-ind p{
   font-weight: 300px;
 }
-.tittle{
-  color: blueviolet;
-  text-align: center;
-}
-.titlesub{
-  color: blueviolet;
-  font-size: 15px;
-}
-.cita{
-border-radius:6%;
- width: 100%;
-}
-.fomulario{
-  padding-bottom: 25px;
-  padding-top: 25px;
- 
-}
 
-
-
-.containero{
-
-  width: 350px;
-  height: 550px;
-  margin: auto;
-  background: linear-gradient(90deg, rgb(116, 216, 252),rgb(156, 153, 254));
-  border-radius: 3%;
-}
 
 
 
@@ -269,23 +314,7 @@ font-size: 24px;
 margin: 50px 0 0 0;
 color: #9e9799;
 }
-input[type="submit"]{
-  width: 100%;
-  border: 1px solid ;
-  border-radius: 5px;
-  padding: 6px 15px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  
-  background:rgb(156, 153, 254)
-  cursor: pointer;
-  font-size: 16px;
-  
-}
-input[type =submit]:hover{
-  
-background: #7F00FF;
-}
+
 .contenedor h3{
   color: #4d0686;
 }
